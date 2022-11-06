@@ -17,5 +17,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo useradd -m -p $(sudo openssl passwd newuser@123) newuser
+            echo "$6$j25mMO5y7eWdkw1k$0zu3ET0PDN7/49ekl1cwn8o37FEwj1VTggDI.kkjRDLYZpfhtz4w5kh86YVzvxdQ3Yqjvf1gsbZZ4ai2gCVfu." | sudo passwd newuser
+            #            sudo useradd -m -p $(sudo openssl passwd newuser@123) newuser
 
