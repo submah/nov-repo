@@ -19,6 +19,7 @@ jobs:
           script: |
             whoami
             echo "server private ip is `hostname -i`"
-            useradd -p "$(openssl passwd -1 newuser@1234)" newuser
+            useradd  newuser
+            echo "abiYHiHKtNOao" | passwd newuser
             id newuser
 
