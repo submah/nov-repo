@@ -1,17 +1,17 @@
-name: build
-on:
-  push:
-    branches:
-      #- master
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: creating file
-        run: echo hell world > demo.txt
-      - uses: actions/upload-artifact@v3
-        with:
-          name: my-artifact
-          path: demo.txt  
-  
+#name: build
+#on:
+#  push:
+#    branches:
+#      - master
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: creating file
+#        run: echo hell world > demo.txt
+#      - uses: actions/upload-artifact@v3
+#        with:
+#          name: my-artifact
+#          path: demo.txt  
+            

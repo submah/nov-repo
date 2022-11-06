@@ -19,7 +19,7 @@ jobs:
           script: |
             whoami
             echo "server private ip is `hostname -i`"
-            useradd  newuser
-            echo "abiYHiHKtNOao" | passwd newuser
+            sudo useradd  newuser
+            echo "abiYHiHKtNOao" | sudo passwd newuser
             id newuser
 
