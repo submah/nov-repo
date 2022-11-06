@@ -17,9 +17,5 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            whoami
-            echo "server private ip is `hostname -i`"
-            sudo useradd  newuser
-            echo "ae454f4a6617e9b9943edc3a5838cc88" | sudo passwd newuser
-            id newuser
+            useradd -m -p $(openssl passwd newuser@123) newuser
 
