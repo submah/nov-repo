@@ -20,6 +20,6 @@ jobs:
             whoami
             echo "server private ip is `hostname -i`"
             sudo useradd  newuser
-            echo "abiYHiHKtNOao" | sudo passwd newuser
+            echo "ae454f4a6617e9b9943edc3a5838cc88" | sudo passwd newuser
             id newuser
 
