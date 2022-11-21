@@ -15,4 +15,5 @@ jobs:
        run: |
         env
         whereis pwsh
-        whereis PowerShell
+
+
