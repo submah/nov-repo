@@ -5,14 +5,14 @@ on:
       - test
 jobs:
   terraform:
-  name: 'ProvisionAKS'
-  runs-on: ubuntu-latest
-  steps:
-    - name: Clone repository
-      uses: actions/checkout@v2  
+    name: 'ProvisionAKS'
+    runs-on: ubuntu-latest
+    steps:
+     - name: Clone repository
+       uses: actions/checkout@v2  
       
-    - name: print env
-      run: |
+     - name: print env
+       run: |
         env
         whereis pwsh
         whereis powershell
