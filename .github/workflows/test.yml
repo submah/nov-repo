@@ -5,7 +5,7 @@ on:
       - test
 jobs:
   terraform:
-    name: 'ProvisionAKS'
+    name: 'Test'
     runs-on: ubuntu-latest
     steps:
      - name: Clone repository
@@ -15,4 +15,4 @@ jobs:
        run: |
         env
         whereis pwsh
-        whereis powershell
+        whereis PowerShell
