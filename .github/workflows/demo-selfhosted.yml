@@ -11,4 +11,4 @@ jobs:
       - name: command 
         run: |
           hostname -i
-          hsostname
+          hostname
