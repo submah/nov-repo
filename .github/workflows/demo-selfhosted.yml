@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: command 
         run: |
-          hostname -i
           hostname
+          hostname -i
