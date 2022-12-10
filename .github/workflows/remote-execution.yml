@@ -1,22 +1,22 @@
-name: Remote execution
-on:
-  push:
-    branches:
-      - master
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+# name: Remote execution
+# on:
+#   push:
+#     branches:
+#       - master
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
-          script: |
-            echo "$6$j25mMO5y7eWdkw1k$0zu3ET0PDN7/49ekl1cwn8o37FEwj1VTggDI.kkjRDLYZpfhtz4w5kh86YVzvxdQ3Yqjvf1gsbZZ4ai2gCVfu." | sudo passwd newuser
-            #            sudo useradd -m -p $(sudo openssl passwd newuser@123) newuser
+#       - name: executing remote ssh commands using ssh key
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ secrets.HOST }}
+#           username: ${{ secrets.USERNAME }}
+#           key: ${{ secrets.KEY }}
+#           port: ${{ secrets.PORT }}
+#           script: |
+#             echo "$6$j25mMO5y7eWdkw1k$0zu3ET0PDN7/49ekl1cwn8o37FEwj1VTggDI.kkjRDLYZpfhtz4w5kh86YVzvxdQ3Yqjvf1gsbZZ4ai2gCVfu." | sudo passwd newuser
+#             #            sudo useradd -m -p $(sudo openssl passwd newuser@123) newuser
 
